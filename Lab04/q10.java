@@ -11,10 +11,9 @@ class Rectangle extends Shape {
         breadth=y;
     }
     public int area;
-    void findArea()
-    {
+    int getArea() {
         area=length*breadth;
-        System.out.println("Area of rectangle is: " + area);
+        return area;
     }
 }
 
@@ -25,6 +24,6 @@ public class q10{
         int l=sc.nextInt();
         int b=sc.nextInt();
         Rectangle obj = new Rectangle(l,b);
-        obj.findArea();
+        System.out.println("Area of rectangle is: " + obj.getArea());
    }
 }

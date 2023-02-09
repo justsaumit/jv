@@ -1,4 +1,4 @@
-// Q.10 Write a Java program for Rectangle class using Single Inheritance 
+// Q.11 Write a Java program to demonstrate using Multilevel Inheritance 
 import java.util.Scanner;
 
 class Shape {
