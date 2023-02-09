@@ -10,30 +10,31 @@ class Bank {
 
 //subclassses V
 class Citibank extends Bank {
+    @Override
     public double getRateofInterest(){  //overriding
         return 7.25;
     }
+}
 class HDFC extends Bank {
+    @Override
     public double getRateofInterest(){ //overriding
         return 8.75;
     }
 }
 class ICICI extends Bank {
+    @Override
     public double getRateofInterest(){  //overriding
         return 7.50;
     }
 }
 
-}
 
-
-class q12{  
-public static void main(String[] args){
-        Bank b;
+public class q12{
+    public static void main(String[] args){
+        Bank b=new Bank();;
         Scanner sc = new Scanner(System.in);
         outer:
         while (true){
-            b=new Bank();
             System.out.println("------------------------------------------------------");
             System.out.println("Which Bank's Rate of Interest would you like to know?");
             System.out.println("1) Default Bank"+"\n"+"2) Citibank"+"\n"+"3) HDFC Bank"+"\n"+"4) ICICI Bank"+"\n"+"5) End Program");
@@ -59,7 +60,7 @@ public static void main(String[] args){
                         System.out.println("Exiting the program! Thank you");
                         break outer;
                     default: System.out.println("Incorrect option provided! Try Again");
-                    }
             }
         }
+    }
 }

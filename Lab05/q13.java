@@ -18,12 +18,13 @@ class Child extends Parent{
     } //Preventing override using super keyword
 }
 
-class q13{
+public class q13{
     public static void main(String []args){
         Parent p=new Parent();
-        p.intro();               //Base class method works on calling itself
-        Child c=new Child();
-        c.intro();                //On calling show method the child class overrides the Parent's metho        c.useParentIntroMethod(); //By using super keyword we are now able to get result of parents method from child class
+        p.intro();               //Base class method works on calling object p
+        Child c=new Child();    
+        c.intro();              //On calling intro method the child class overrides the Parent's method 
+                                //useParentIntroMethod() - By using super keyword we are now able to get result of parents method from child class
     }
     
 }
