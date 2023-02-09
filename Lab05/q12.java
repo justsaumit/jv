@@ -31,35 +31,35 @@ class ICICI extends Bank {
 
 public class q12{
     public static void main(String[] args){
-        Bank b=new Bank();;
         Scanner sc = new Scanner(System.in);
+        Bank b=new Bank();
         outer:
         while (true){
             System.out.println("------------------------------------------------------");
             System.out.println("Which Bank's Rate of Interest would you like to know?");
             System.out.println("1) Default Bank"+"\n"+"2) Citibank"+"\n"+"3) HDFC Bank"+"\n"+"4) ICICI Bank"+"\n"+"5) End Program");
             int opt=sc.nextInt();
-            boolean repeat;
-                switch (opt) {
-                    case 1:
-                        System.out.println("Default Bank's Rate of Interest: " + b.getRateofInterest());
-                        break;
-                    case 2:
-                        b=new Citibank();
-                        System.out.println("Citibank's Rate of Interest: "+b.getRateofInterest());
-                        break;
-                    case 3:
-                        b=new HDFC();  
-                        System.out.println("HDFC Bank's Rate of Interest: "+b.getRateofInterest());  
-                        break;
-                    case 4:
-                        b=new ICICI();  //comment this to show method overriding is achieved
-                        System.out.println("ICICI Bank's Rate of Interest: "+b.getRateofInterest());  
-                        break;
-                    case 5:
-                        System.out.println("Exiting the program! Thank you");
-                        break outer;
-                    default: System.out.println("Incorrect option provided! Try Again");
+            switch (opt) {
+                case 1:
+                    System.out.println("Default Bank's Rate of Interest: " + b.getRateofInterest());
+                    break;
+                case 2:
+                    b=new Citibank();
+                    System.out.println("Citibank's Rate of Interest: "+b.getRateofInterest());
+                    break;
+                case 3:
+                    b=new HDFC();  
+                    System.out.println("HDFC Bank's Rate of Interest: "+b.getRateofInterest());  
+                    break;
+                case 4:
+                    b=new ICICI();  //comment this to show method overriding is achieved
+                    System.out.println("ICICI Bank's Rate of Interest: "+b.getRateofInterest());
+                    break;
+                case 5:
+                    System.out.println("Exiting the program! Thank you");
+                    break outer;
+                default: 
+                    System.out.println("Incorrect option provided! Try Again");
             }
         }
     }
