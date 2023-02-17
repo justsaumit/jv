@@ -8,8 +8,8 @@ class Parent{
 }
 
 class Child extends Parent{
+    int age=16;
     public void intro(){
-    int age=14;
         System.out.println("Hello! I'm Child! My Age is "+age);
     } //method override by child class
 
@@ -19,12 +19,12 @@ class Child extends Parent{
 }
 
 public class q13{
-    public static void main(String []args){
+    public static void main(String[] args){
         Parent p=new Parent();
-        p.intro();               //Base class method works on calling object p
+        p.intro();              //Base class method works! on calling
         Child c=new Child();    
         c.intro();              //On calling intro method the child class overrides the Parent's method 
-                                //useParentIntroMethod() - By using super keyword we are now able to get result of parents method from child class
+        c.useParentIntroMethod(); //useParentIntroMethod() - By using super keyword we are now able to get result of parents method from child class
     }
     
 }
