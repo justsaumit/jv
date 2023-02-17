@@ -28,8 +28,8 @@ class Rectangle extends Shape {
 }
 
 class Triangle extends Shape {
-    public Triangle(int l, int b) {
-        super(l, b); // use length and breadth for base and height
+    public Triangle(int bs, int h) {
+        super(bs, h); // use length and breadth for base and height
     }
 
     public void printArea() {
