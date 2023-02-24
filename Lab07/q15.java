@@ -1,4 +1,4 @@
-//Q15 Write a Java program to demonstrate use of user defined packages.
+//Q.15 Write a Java program to demonstrate use of user defined packages.
 //This is the main program where user-defined package is being imported
 
 import saumitpkg.printer;
