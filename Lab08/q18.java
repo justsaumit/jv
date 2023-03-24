@@ -1,3 +1,5 @@
+//LAB 8: Interfaces
+//Q18.Write a Java program to illustrate the multiple inheritance by using Interfaces.
 import java.util.Scanner;
 
 interface Addition{
