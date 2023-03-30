@@ -35,7 +35,7 @@ public class q19 {
     public static void main(String[] args) {
         Car car = new Car("Maruti", 4);
         Vehicle.hornsound(); // calls static method "Beep beep!"
-        car.printManufacturer(); // prints "Manufacturer: Toyota"
+        car.printManufacturer(); // prints "Manufacturer: Maruti"
         car.printNumWheels(); // prints "Number of wheels: 4"
     }
 }
