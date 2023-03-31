@@ -1,10 +1,11 @@
+//21. Write a java program to demonstrate exception handling with multiple catch blocks
 public class MultiExceptionHandling{
     public static void main(String[] args){
         String s = "Example String";
         int a[] = {0, 1, 2, 3, 4, 5};
         try{
             // Setting s to null and try to get its length. This will throw a NullPointerException
-            s = null;
+            //s = null;
             int sLength = s.length(); 
             System.out.println("String length: " +sLength);
             // Trying to print out 6th index/seventh element of array "a" containing maximum of six elements. This will throw ArrayIndexOutOfBoundsException
